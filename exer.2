@@ -1,0 +1,37 @@
+#include<stdio.h> 
+
+
+  
+int main() {
+
+	int i, n ,t1 = 0, t2 = 1 , proxTermo;
+	int usuario;
+	printf("Informe a quantidade de termos:  ");
+	scanf("%i", &n);
+	
+	printf("digite um numero \n  ");
+    scanf("%d",&usuario);
+	
+	
+	for (i = 1; i <= n; ++i) {  
+		
+        if(usuario == t1){
+        printf("O valor %d não parte ao conjunto",usuario);
+        break;
+        }
+		
+        else(usuario !=  t1);{
+        printf("O valor %d faz parte do conjunto",usuario);
+
+        break;
+        }
+
+
+		proxTermo = t1 + t2;  
+		t1 = t2;
+		t2 = proxTermo;
+				
+		}
+
+   return 0;
+}
